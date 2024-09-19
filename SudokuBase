@@ -1,0 +1,27 @@
+import java.util.Random;
+
+public class Sudoku {
+
+    public static void organizarTabuleiro(int[][] baseTabuleiro){
+        Random aleatorio = new Random();
+        for(int i=0;i<9;i++){
+            for(int j=0;j<9;j++){
+                baseTabuleiro[i][j]= aleatorio.nextInt(9)+1;
+
+            }
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        int[][] sudokuTabuleiro = new int[9][9];
+        
+        organizarTabuleiro(sudokuTabuleiro);
+
+        for(int i=0; i<9; i++){
+           for(int j=0; j<9; j++){
+            System.out.print(sudokuTabuleiro[i][j] + "\t");
+           }
+           System.out.println();
+        }
+    }
+}
