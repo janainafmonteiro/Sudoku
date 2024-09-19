@@ -1,0 +1,44 @@
+import java.util.Random;
+
+public class Sudoku {
+
+    public static void sequenciaTabuleiro(int[][] baseTabuleiro){ 
+        int num = 1;
+        for(int i=0;i<9;i++){
+            for(int j=0;j<9;j++){
+                baseTabuleiro[i][j]= num;
+                num++;
+
+            }
+            num=1;
+        }
+    }
+
+    public static void organizarSeqTabuleiro(int[][] organizado){
+        Random aleatorio = new Random();
+        sequenciaTabuleiro(organizado);
+        for(int i=0;i<1000;i++){
+            int linha = aleatorio.nextInt(9);
+            int coluna = aleatorio.nextInt(9);
+            int linhaDois = aleatorio.nextInt(9);
+            int colunaDois = aleatorio.nextInt(9);
+
+            int aux = organizado[linha][coluna];
+            organizado[linha][coluna] = organizado[linhaDois][colunaDois];
+            organizado[linhaDois][colunaDois] = aux;
+    }
+}
+
+    public static void main(String[] args) throws Exception {
+        int[][] sudokuTabuleiro = new int[9][9];
+        
+        organizarSeqTabuleiro(sudokuTabuleiro);
+
+        for(int i=0; i<9; i++){
+           for(int j=0; j<9; j++){
+            System.out.print(sudokuTabuleiro[i][j] + "\t");
+           }
+           System.out.println();
+        }
+    }
+}
