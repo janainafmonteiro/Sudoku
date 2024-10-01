@@ -1,78 +1,75 @@
 import java.util.Random;
 
-public class TesteDeNovo {
-	public static void organizarTabuleiro(int[][] baseTabuleiro){
+public class Main {
+    public static void organizarTabuleiro(int[][] baseTabuleiro){
         Random aleatorio = new Random();
         for(int i=0;i<9;i++){
             for(int j=0;j<9;j++){
-                
-               do {
-            	   do {
-                   	baseTabuleiro[i][j]= aleatorio.nextInt(9)+1;
-                   }while(!verificarQuadrados(baseTabuleiro, baseTabuleiro[i][j], i, j));
-               }while(!verificarColuna(baseTabuleiro, baseTabuleiro[i][j], j));
-                
+                do {
+                    baseTabuleiro[i][j]= aleatorio.nextInt(9)+1;
+                }while(!verificarColuna(baseTabuleiro, baseTabuleiro[i][j], j) && !verificarLinha(baseTabuleiro, baseTabuleiro[i][j], i) && !verificarQuadrados(baseTabuleiro, baseTabuleiro[i][j], i, j));
+
             }
         }
-        
-	}
-	public static boolean verificarQuadrados(int[][] tabuleiro, int numero, int linha, int coluna) {
-		boolean verif= true;
-		int repetido=0;
-		if(linha>=0 && linha<3 && coluna>=0 && coluna<3) {
-			for(int i = 0; i < 3; i++){
-	            for(int j = 0; j < 3; j++){
-	            	if(numero== tabuleiro[i][j]) {
-	            		repetido++;
-	            		if(repetido>1) {
-	            			verif= false;
-	            			break;
-	            		}
-	            	}
-	            	
-	            	
-	            }
-	        }
-		}
-		
-		return verif;
-	}
-	
-	 public static boolean verificarLinha(int[][] tabuleiro, int numero, int linha){
-		boolean verif= true;
-		int repetido=0;
-        for(int i=0;i<tabuleiro.length;i++){
-            if(tabuleiro[linha][i]==numero){
-                repetido++;
-                if(repetido>1) {
-        			verif= false;
-        			break;
-        		} 
+
+    }
+    public static boolean verificarQuadrados(int[][] tabuleiro, int numero, int linha, int coluna) {
+        boolean verif= true;
+        int repetido=0;
+        if(linha>=0 && linha<3 && coluna>=0 && coluna<3) {
+            for(int i = 0; i < 3; i++){
+                for(int j = 0; j < 3; j++){
+                    if(numero== tabuleiro[i][j]) {
+                        repetido++;
+                        if(repetido>1) {
+                            verif= false;
+                            break;
+                        }
+                    }
+
+
+                }
             }
         }
 
         return verif;
     }
-	 
-	 public static boolean verificarColuna(int[][] tabuleiro, int numero, int coluna){
-		 boolean verif= true;
-			int repetido=0;
-	        for(int i=0;i<tabuleiro.length;i++){
-	            if(tabuleiro[i][coluna]==numero){
-	                repetido++;
-	                if(repetido>1) {
-	        			verif= false;
-	        			break;
-	        		} 
-	            }
-	        }
 
-	        return verif;
-	    }
-	public static void main(String[] args) {
-		int[][] tabuleiro = new int[9][9];
-		organizarTabuleiro(tabuleiro);
-		for(int i=0;i<tabuleiro.length;i++){
+    public static boolean verificarLinha(int[][] tabuleiro, int numero, int linha){
+        boolean verif= true;
+        int repetido=0;
+        for(int i=0;i<tabuleiro.length;i++){
+            if(tabuleiro[linha][i]==numero){
+                repetido++;
+                if(repetido>1) {
+                    verif= false;
+                    break;
+                }
+            }
+        }
+
+        return verif;
+    }
+
+    public static boolean verificarColuna(int[][] tabuleiro, int numero, int coluna){
+        boolean verif= true;
+        int repetido=0;
+        for(int i=0;i<tabuleiro.length;i++){
+            if(tabuleiro[i][coluna]==numero){
+                repetido++;
+                if(repetido>1) {
+                    verif= false;
+                    break;
+                }
+            }
+        }
+
+        return verif;
+    }
+    public static void main(String[] args) {
+        int[][] tabuleiro = new int[9][9];
+        organizarTabuleiro(tabuleiro);
+        for(int i=0;i<tabuleiro.length;i++){
             if(i!=0 && i%3==0){
                 System.out.println();
             }
@@ -84,8 +81,8 @@ public class TesteDeNovo {
 
             }
             System.out.println("\n");
-            
+
         }
-	}
-	
+    }
+
 }
