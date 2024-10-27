@@ -1,3 +1,6 @@
+
+package sudoku;
+
 public class Validar {
     public boolean posicaoValida(int[][] tab, int num, int lin, int col) {
         return !possuiNumLinha(tab, num, lin) && !possuiNumColuna(tab, num, col) && !possuiNumQuadrado(tab, num, lin, col);
