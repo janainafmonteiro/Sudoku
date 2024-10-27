@@ -229,7 +229,7 @@ public class Tabuleiro {
             System.out.println("Erros: "+ erros);
             imprimirTabuleiro(tabuleiro);
             if(concluido(tabuleiro, tabResolvido)){
-                System.out.println("Jogo concluído, digite -1 para sair, ou 0 para continuar");
+                System.out.println("Jogo concluído, digite -1 para sair");
                 numero = input.nextInt();
             }
         }while(numero!=-1);
