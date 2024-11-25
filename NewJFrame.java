@@ -4,6 +4,9 @@
  */
 package View;
 
+import domain.Tabuleiro;
+import java.awt.Color;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 /**
  *
@@ -109,10 +112,17 @@ public class NewJFrame extends javax.swing.JFrame {
         quadradoI7 = new javax.swing.JTextField();
         quadradoC7 = new javax.swing.JTextField();
         numeroUsuario = new javax.swing.JTextField();
+        Genio = new javax.swing.JButton();
+        Facil = new javax.swing.JButton();
+        Medio = new javax.swing.JButton();
+        Dificil = new javax.swing.JButton();
+        IniciarJogo = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         quadradoA2.setEditable(false);
+        quadradoA2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoA2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoA2.setToolTipText("");
         quadradoA2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -124,6 +134,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoA3.setEditable(false);
+        quadradoA3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoA3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoA3.setToolTipText("");
         quadradoA3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -135,6 +146,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoA1.setEditable(false);
+        quadradoA1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoA1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoA1.setToolTipText("");
         quadradoA1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -158,6 +170,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoA5.setEditable(false);
+        quadradoA5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoA5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoA5.setToolTipText("");
         quadradoA5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -169,6 +182,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoA6.setEditable(false);
+        quadradoA6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoA6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoA6.setToolTipText("");
         quadradoA6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -180,6 +194,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoA4.setEditable(false);
+        quadradoA4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoA4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoA4.setToolTipText("");
         quadradoA4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -191,6 +206,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoA8.setEditable(false);
+        quadradoA8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoA8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoA8.setToolTipText("");
         quadradoA8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -202,6 +218,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoA9.setEditable(false);
+        quadradoA9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoA9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoA9.setToolTipText("");
         quadradoA9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -213,6 +230,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoA7.setEditable(false);
+        quadradoA7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoA7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoA7.setToolTipText("");
         quadradoA7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -225,6 +243,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoD2.setEditable(false);
         quadradoD2.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoD2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoD2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoD2.setToolTipText("");
         quadradoD2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -237,6 +256,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoD3.setEditable(false);
         quadradoD3.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoD3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoD3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoD3.setToolTipText("");
         quadradoD3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -249,6 +269,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoD1.setEditable(false);
         quadradoD1.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoD1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoD1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoD1.setToolTipText("");
         quadradoD1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -261,6 +282,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoD5.setEditable(false);
         quadradoD5.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoD5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoD5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoD5.setToolTipText("");
         quadradoD5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -273,6 +295,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoD6.setEditable(false);
         quadradoD6.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoD6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoD6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoD6.setToolTipText("");
         quadradoD6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -285,6 +308,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoD4.setEditable(false);
         quadradoD4.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoD4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoD4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoD4.setToolTipText("");
         quadradoD4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -297,6 +321,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoD8.setEditable(false);
         quadradoD8.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoD8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoD8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoD8.setToolTipText("");
         quadradoD8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -309,6 +334,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoD9.setEditable(false);
         quadradoD9.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoD9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoD9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoD9.setToolTipText("");
         quadradoD9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -321,6 +347,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoD7.setEditable(false);
         quadradoD7.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoD7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoD7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoD7.setToolTipText("");
         quadradoD7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -332,6 +359,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoG2.setEditable(false);
+        quadradoG2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoG2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoG2.setToolTipText("");
         quadradoG2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -343,6 +371,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoG3.setEditable(false);
+        quadradoG3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoG3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoG3.setToolTipText("");
         quadradoG3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -354,6 +383,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoG1.setEditable(false);
+        quadradoG1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoG1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoG1.setToolTipText("");
         quadradoG1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -365,6 +395,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoG5.setEditable(false);
+        quadradoG5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoG5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoG5.setToolTipText("");
         quadradoG5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -376,6 +407,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoG6.setEditable(false);
+        quadradoG6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoG6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoG6.setToolTipText("");
         quadradoG6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -387,6 +419,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoG4.setEditable(false);
+        quadradoG4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoG4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoG4.setToolTipText("");
         quadradoG4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -398,6 +431,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoG8.setEditable(false);
+        quadradoG8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoG8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoG8.setToolTipText("");
         quadradoG8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -409,6 +443,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoG9.setEditable(false);
+        quadradoG9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoG9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoG9.setToolTipText("");
         quadradoG9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -420,6 +455,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoG7.setEditable(false);
+        quadradoG7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoG7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoG7.setToolTipText("");
         quadradoG7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -431,6 +467,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoE2.setEditable(false);
+        quadradoE2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoE2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoE2.setToolTipText("");
         quadradoE2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -442,6 +479,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoE3.setEditable(false);
+        quadradoE3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoE3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoE3.setToolTipText("");
         quadradoE3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -453,6 +491,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoE1.setEditable(false);
+        quadradoE1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoE1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoE1.setToolTipText("");
         quadradoE1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -464,6 +503,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoE5.setEditable(false);
+        quadradoE5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoE5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoE5.setToolTipText("");
         quadradoE5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -475,6 +515,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoE6.setEditable(false);
+        quadradoE6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoE6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoE6.setToolTipText("");
         quadradoE6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -486,6 +527,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoE4.setEditable(false);
+        quadradoE4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoE4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoE4.setToolTipText("");
         quadradoE4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -497,6 +539,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoE8.setEditable(false);
+        quadradoE8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoE8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoE8.setToolTipText("");
         quadradoE8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -508,6 +551,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoE9.setEditable(false);
+        quadradoE9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoE9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoE9.setToolTipText("");
         quadradoE9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -519,6 +563,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoE7.setEditable(false);
+        quadradoE7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoE7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoE7.setToolTipText("");
         quadradoE7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -531,6 +576,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoH2.setEditable(false);
         quadradoH2.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoH2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoH2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoH2.setToolTipText("");
         quadradoH2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -543,6 +589,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoB2.setEditable(false);
         quadradoB2.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoB2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoB2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoB2.setToolTipText("");
         quadradoB2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -555,6 +602,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoH3.setEditable(false);
         quadradoH3.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoH3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoH3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoH3.setToolTipText("");
         quadradoH3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -567,6 +615,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoB3.setEditable(false);
         quadradoB3.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoB3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoB3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoB3.setToolTipText("");
         quadradoB3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -579,6 +628,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoH1.setEditable(false);
         quadradoH1.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoH1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoH1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoH1.setToolTipText("");
         quadradoH1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -591,6 +641,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoB1.setEditable(false);
         quadradoB1.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoB1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoB1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoB1.setToolTipText("");
         quadradoB1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -603,6 +654,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoH5.setEditable(false);
         quadradoH5.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoH5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoH5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoH5.setToolTipText("");
         quadradoH5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -615,6 +667,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoB5.setEditable(false);
         quadradoB5.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoB5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoB5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoB5.setToolTipText("");
         quadradoB5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -627,6 +680,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoH6.setEditable(false);
         quadradoH6.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoH6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoH6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoH6.setToolTipText("");
         quadradoH6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -639,6 +693,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoB6.setEditable(false);
         quadradoB6.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoB6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoB6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoB6.setToolTipText("");
         quadradoB6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -651,6 +706,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoH4.setEditable(false);
         quadradoH4.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoH4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoH4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoH4.setToolTipText("");
         quadradoH4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -663,6 +719,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoB4.setEditable(false);
         quadradoB4.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoB4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoB4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoB4.setToolTipText("");
         quadradoB4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -675,6 +732,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoH8.setEditable(false);
         quadradoH8.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoH8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoH8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoH8.setToolTipText("");
         quadradoH8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -687,6 +745,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoB8.setEditable(false);
         quadradoB8.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoB8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoB8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoB8.setToolTipText("");
         quadradoB8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -699,6 +758,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoB9.setEditable(false);
         quadradoB9.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoB9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoB9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoB9.setToolTipText("");
         quadradoB9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -711,6 +771,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoH9.setEditable(false);
         quadradoH9.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoH9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoH9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoH9.setToolTipText("");
         quadradoH9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -723,6 +784,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoH7.setEditable(false);
         quadradoH7.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoH7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoH7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoH7.setToolTipText("");
         quadradoH7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -735,6 +797,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoB7.setEditable(false);
         quadradoB7.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoB7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoB7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoB7.setToolTipText("");
         quadradoB7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -747,6 +810,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoF2.setEditable(false);
         quadradoF2.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoF2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoF2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoF2.setToolTipText("");
         quadradoF2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -759,6 +823,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoF3.setEditable(false);
         quadradoF3.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoF3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoF3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoF3.setToolTipText("");
         quadradoF3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -771,6 +836,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoF1.setEditable(false);
         quadradoF1.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoF1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoF1.setToolTipText("");
         quadradoF1.setActionCommand("<Not Set>");
@@ -784,6 +850,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoF5.setEditable(false);
         quadradoF5.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoF5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoF5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoF5.setToolTipText("");
         quadradoF5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -796,6 +863,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoF6.setEditable(false);
         quadradoF6.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoF6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoF6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoF6.setToolTipText("");
         quadradoF6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -808,6 +876,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoF4.setEditable(false);
         quadradoF4.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoF4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoF4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoF4.setToolTipText("");
         quadradoF4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -820,6 +889,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoF8.setEditable(false);
         quadradoF8.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoF8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoF8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoF8.setToolTipText("");
         quadradoF8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -832,6 +902,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoF9.setEditable(false);
         quadradoF9.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoF9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoF9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoF9.setToolTipText("");
         quadradoF9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -844,6 +915,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         quadradoF7.setEditable(false);
         quadradoF7.setBackground(new java.awt.Color(200, 200, 200));
+        quadradoF7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoF7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoF7.setToolTipText("");
         quadradoF7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -855,6 +927,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoI2.setEditable(false);
+        quadradoI2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoI2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoI2.setToolTipText("");
         quadradoI2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -866,6 +939,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoC2.setEditable(false);
+        quadradoC2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoC2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoC2.setToolTipText("");
         quadradoC2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -877,6 +951,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoI3.setEditable(false);
+        quadradoI3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoI3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoI3.setToolTipText("");
         quadradoI3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -888,6 +963,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoC3.setEditable(false);
+        quadradoC3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoC3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoC3.setToolTipText("");
         quadradoC3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -899,6 +975,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoI1.setEditable(false);
+        quadradoI1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoI1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoI1.setToolTipText("");
         quadradoI1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -910,6 +987,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoC1.setEditable(false);
+        quadradoC1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoC1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoC1.setToolTipText("");
         quadradoC1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -921,6 +999,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoI5.setEditable(false);
+        quadradoI5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoI5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoI5.setToolTipText("");
         quadradoI5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -932,6 +1011,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoC5.setEditable(false);
+        quadradoC5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoC5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoC5.setToolTipText("");
         quadradoC5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -943,6 +1023,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoI6.setEditable(false);
+        quadradoI6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoI6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoI6.setToolTipText("");
         quadradoI6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -954,6 +1035,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoC6.setEditable(false);
+        quadradoC6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoC6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoC6.setToolTipText("");
         quadradoC6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -965,6 +1047,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoI4.setEditable(false);
+        quadradoI4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoI4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoI4.setToolTipText("");
         quadradoI4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -976,6 +1059,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoC4.setEditable(false);
+        quadradoC4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoC4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoC4.setToolTipText("");
         quadradoC4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -987,6 +1071,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoI8.setEditable(false);
+        quadradoI8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoI8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoI8.setToolTipText("");
         quadradoI8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -998,6 +1083,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoC8.setEditable(false);
+        quadradoC8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoC8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoC8.setToolTipText("");
         quadradoC8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1009,6 +1095,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoC9.setEditable(false);
+        quadradoC9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoC9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoC9.setToolTipText("");
         quadradoC9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1020,6 +1107,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoI9.setEditable(false);
+        quadradoI9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoI9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoI9.setToolTipText("");
         quadradoI9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1031,6 +1119,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoI7.setEditable(false);
+        quadradoI7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoI7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoI7.setToolTipText("");
         quadradoI7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1042,6 +1131,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         quadradoC7.setEditable(false);
+        quadradoC7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         quadradoC7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quadradoC7.setToolTipText("");
         quadradoC7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1059,14 +1149,84 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        Genio.setText("Gênio");
+        Genio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                GenioMouseClicked(evt);
+            }
+        });
+        Genio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GenioActionPerformed(evt);
+            }
+        });
+
+        Facil.setText("Fácil");
+        Facil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                FacilMouseClicked(evt);
+            }
+        });
+        Facil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FacilActionPerformed(evt);
+            }
+        });
+
+        Medio.setText("Médio");
+        Medio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MedioMouseClicked(evt);
+            }
+        });
+        Medio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MedioActionPerformed(evt);
+            }
+        });
+
+        Dificil.setText("Díficl");
+        Dificil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DificilMouseClicked(evt);
+            }
+        });
+        Dificil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DificilActionPerformed(evt);
+            }
+        });
+
+        IniciarJogo.setForeground(new java.awt.Color(0, 255, 0));
+        IniciarJogo.setText("iniciar");
+        IniciarJogo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                IniciarJogoMouseClicked(evt);
+            }
+        });
+        IniciarJogo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IniciarJogoActionPerformed(evt);
+            }
+        });
+
+        jTextField1.setText("Níveis de jogo");
+        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(150, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
+                .addGap(164, 164, 164)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(quadradoG7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1086,53 +1246,8 @@ public class NewJFrame extends javax.swing.JFrame {
                             .addComponent(quadradoG9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(quadradoG6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(quadradoG3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(quadradoD7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(quadradoD8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(quadradoD4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoD5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(quadradoD1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoD2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(quadradoD9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(quadradoD6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoD3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(quadradoA7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(quadradoA8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(quadradoA4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoA5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(quadradoA1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoA2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(quadradoA9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(quadradoA6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoA3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
+                                .addComponent(quadradoG3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(quadradoH7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1152,53 +1267,8 @@ public class NewJFrame extends javax.swing.JFrame {
                             .addComponent(quadradoH9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(quadradoH6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(quadradoH3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(quadradoE7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(quadradoE8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(quadradoE4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoE5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(quadradoE1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoE2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(quadradoE9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(quadradoE6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoE3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(quadradoB7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(quadradoB8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(quadradoB4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoB5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(quadradoB1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoB2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(quadradoB9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(quadradoB6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoB3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
+                                .addComponent(quadradoH3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(quadradoI7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1218,14 +1288,116 @@ public class NewJFrame extends javax.swing.JFrame {
                             .addComponent(quadradoI9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(quadradoI6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(quadradoI3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(quadradoF7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(quadradoF8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(quadradoI3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(quadradoA7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(quadradoA8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(quadradoA4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(quadradoA5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(quadradoA1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(quadradoA2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(quadradoA9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(quadradoA6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(quadradoA3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(quadradoB7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(quadradoB8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(quadradoB4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(quadradoB5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(quadradoB1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(quadradoB2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(quadradoB9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(quadradoB6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(quadradoB3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(quadradoC7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(quadradoC8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(quadradoC4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(quadradoC5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(quadradoC1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(quadradoC2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(quadradoC9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(quadradoC6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(quadradoC3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(quadradoD7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(quadradoD8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(quadradoD4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(quadradoD5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(quadradoD1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(quadradoD2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(quadradoD9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(quadradoD6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(quadradoD3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(quadradoE7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(quadradoE8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(quadradoE4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(quadradoE5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(quadradoE1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(quadradoE2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(quadradoE9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(quadradoE6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(quadradoE3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(quadradoF4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1234,78 +1406,150 @@ public class NewJFrame extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(quadradoF1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoF2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(quadradoF9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(quadradoF6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoF3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(quadradoC7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(quadradoC8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(quadradoF2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(quadradoC4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(quadradoF7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoC5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(quadradoC1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quadradoC2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(quadradoC9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(quadradoC6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoC3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(381, 381, 381))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(164, 164, 164)
-                .addComponent(numeroUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addComponent(quadradoF8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(quadradoF9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(quadradoF6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(quadradoF3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Facil, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Medio, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Dificil, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Genio, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
+                        .addComponent(IniciarJogo, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(53, 53, 53))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(numeroUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(175, 175, 175))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(numeroUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoA2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoA3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoA1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoA5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoA6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoA4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoA8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoA9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoA7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoD2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoD3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoD1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoD5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoD6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoD4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoD8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoD9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoD7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(68, 68, 68)
+                        .addComponent(numeroUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoC2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoC3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoC1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoC5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoC6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoC4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoC8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoC9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoC7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoA2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoA3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoA1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoA5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoA6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoA4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoA8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoA9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoA7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoB2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoB3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoB1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoB5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoB6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoB4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoB8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoB9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoB7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoF2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoF3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoF1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoF5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoF6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoF4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoD2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoD3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoD1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoD5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoD6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoD4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoD8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoD9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoD7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoE2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoE3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoE1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoE5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoE6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoE4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(quadradoE8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoE9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoE7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoF7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoF8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quadradoF9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(62, 62, 62)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(Facil)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Medio)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Dificil)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Genio))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(56, 56, 56)
+                                .addComponent(IniciarJogo, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(15, 15, 15)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(quadradoG2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(quadradoG3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1322,97 +1566,33 @@ public class NewJFrame extends javax.swing.JFrame {
                             .addComponent(quadradoG7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoC2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoC3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoC1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(quadradoH2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoH3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoH1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoC5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoC6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoC4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(quadradoH5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoH6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoH4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoC8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoC9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoC7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoF2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoF3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoF1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoF5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoF6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoF4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoF8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoF9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoF7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(quadradoH8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoH9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoH7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoI8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoI9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoI7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoB2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoB3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoB1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(quadradoI2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoI3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoI1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoB5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoB6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoB4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoB8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoB9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoB7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoE2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoE3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoE1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoE5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoE6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoE4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(quadradoE8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoE9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quadradoE7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(quadradoI2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoI3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoI1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(quadradoI5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoI6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoI4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(quadradoI8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoI9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoI7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(quadradoH2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoH3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoH1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(quadradoH5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoH6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoH4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(quadradoH8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoH9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(quadradoH7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(134, 134, 134))
+                            .addComponent(quadradoI5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoI6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quadradoI4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(77, Short.MAX_VALUE))
         );
 
         pack();
@@ -2654,6 +2834,87 @@ public class NewJFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Erro: Digite apenas numeros de 1 a 9");
         }
     }//GEN-LAST:event_quadradoI8MouseClicked
+
+    private void GenioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GenioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GenioActionPerformed
+
+    private void FacilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FacilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FacilActionPerformed
+
+    private void MedioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MedioActionPerformed
+
+    private void DificilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DificilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DificilActionPerformed
+
+    private void GenioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_GenioMouseClicked
+        // TODO add your handling code here:
+        tabuleiro.setNivel(4);
+        Facil.setForeground(Color.BLACK);
+        Medio.setForeground(Color.BLACK);
+        Dificil.setForeground(Color.BLACK);
+        Genio.setForeground(Color.BLUE);
+    }//GEN-LAST:event_GenioMouseClicked
+
+    private void MedioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MedioMouseClicked
+        // TODO add your handling code here:
+        tabuleiro.setNivel(2);
+        Facil.setForeground(Color.BLACK);
+        Medio.setForeground(Color.BLUE);
+        Dificil.setForeground(Color.BLACK);
+        Genio.setForeground(Color.BLACK);
+    }//GEN-LAST:event_MedioMouseClicked
+
+    private void DificilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DificilMouseClicked
+        // TODO add your handling code here:
+        tabuleiro.setNivel(3);
+        Facil.setForeground(Color.BLACK);
+        Medio.setForeground(Color.BLACK);
+        Dificil.setForeground(Color.BLUE);
+        Genio.setForeground(Color.BLACK);
+    }//GEN-LAST:event_DificilMouseClicked
+
+    private void FacilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FacilMouseClicked
+        // TODO add your handling code here:
+        tabuleiro.setNivel(1);
+        Facil.setForeground(Color.BLUE);
+        Medio.setForeground(Color.BLACK);
+        Dificil.setForeground(Color.BLACK);
+        Genio.setForeground(Color.BLACK);
+               
+    }//GEN-LAST:event_FacilMouseClicked
+
+    private void IniciarJogoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IniciarJogoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_IniciarJogoActionPerformed
+
+    private void IniciarJogoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IniciarJogoMouseClicked
+        // TODO add your handling code here:
+        tabuleiroJogador = tabuleiro.mostrarNumero();
+        iniciarQuadrado(0,0,0);
+        iniciarQuadrado(0,3,9);
+        iniciarQuadrado(0,6,18);
+        iniciarQuadrado(3,0,27);
+        iniciarQuadrado(3,3,36);
+        iniciarQuadrado(3,6,45);
+        iniciarQuadrado(6,0,54);
+        iniciarQuadrado(6,3,63);
+        iniciarQuadrado(6,6,72);
+        Facil.setEnabled(false);
+        Medio.setEnabled(false);
+        Dificil.setEnabled(false);
+        Genio.setEnabled(false);
+        IniciarJogo.setEnabled(false);
+        System.out.println(tabuleiro.getNivel());
+    }//GEN-LAST:event_IniciarJogoMouseClicked
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
    
     private boolean verificar(int numero){
        if(numero>0 && numero <10){
@@ -2665,8 +2926,118 @@ public class NewJFrame extends javax.swing.JFrame {
      * @param args the command line arguments
      */
 
-
+    private void iniciarQuadrado(int lin, int col, int indice){
+        listaQuadrados();
+        
+        int linQuadrado = lin - lin % 3;
+        int colQuadrado = col - col % 3;
+        int numero;
+        for(int i = linQuadrado; i < linQuadrado + 3; i++){
+            for(int j = colQuadrado; j < colQuadrado + 3; j++){
+                numero = this.tabuleiroJogador[i][j];
+                String numeroString = Integer.toString(numero);
+                this.quadrados.get(indice).setText(numeroString);
+                indice++;
+            }
+        }
+    }
+    
+    
+private void listaQuadrados(){
+        quadrados = new ArrayList<javax.swing.JTextField>();
+        quadrados.add(quadradoA1);
+        quadrados.add(quadradoA2);
+        quadrados.add(quadradoA3);
+        quadrados.add(quadradoA4);
+        quadrados.add(quadradoA5);
+        quadrados.add(quadradoA6);
+        quadrados.add(quadradoA7);
+        quadrados.add(quadradoA8);
+        quadrados.add(quadradoA9);
+        quadrados.add(quadradoB1);
+        quadrados.add(quadradoB2);
+        quadrados.add(quadradoB3);
+        quadrados.add(quadradoB4);
+        quadrados.add(quadradoB5);
+        quadrados.add(quadradoB6);
+        quadrados.add(quadradoB7);
+        quadrados.add(quadradoB8);
+        quadrados.add(quadradoB9);
+        quadrados.add(quadradoC1);
+        quadrados.add(quadradoC2);
+        quadrados.add(quadradoC3);
+        quadrados.add(quadradoC4);
+        quadrados.add(quadradoC5);
+        quadrados.add(quadradoC6);
+        quadrados.add(quadradoC7);
+        quadrados.add(quadradoC8);
+        quadrados.add(quadradoC9);
+        quadrados.add(quadradoD1);
+        quadrados.add(quadradoD2);
+        quadrados.add(quadradoD3);
+        quadrados.add(quadradoD4);
+        quadrados.add(quadradoD5);
+        quadrados.add(quadradoD6);
+        quadrados.add(quadradoD7);
+        quadrados.add(quadradoD8);
+        quadrados.add(quadradoD9);
+        quadrados.add(quadradoE1);
+        quadrados.add(quadradoE2);
+        quadrados.add(quadradoE3);
+        quadrados.add(quadradoE4);
+        quadrados.add(quadradoE5);
+        quadrados.add(quadradoE6);
+        quadrados.add(quadradoE7);
+        quadrados.add(quadradoE8);
+        quadrados.add(quadradoE9);
+        quadrados.add(quadradoF1);
+        quadrados.add(quadradoF2);
+        quadrados.add(quadradoF3);
+        quadrados.add(quadradoF4);
+        quadrados.add(quadradoF5);
+        quadrados.add(quadradoF6);
+        quadrados.add(quadradoF7);
+        quadrados.add(quadradoF8);
+        quadrados.add(quadradoF9);
+        quadrados.add(quadradoG1);
+        quadrados.add(quadradoG2);
+        quadrados.add(quadradoG3);
+        quadrados.add(quadradoG4);
+        quadrados.add(quadradoG5);
+        quadrados.add(quadradoG6);
+        quadrados.add(quadradoG7);
+        quadrados.add(quadradoG8);
+        quadrados.add(quadradoG9);
+        quadrados.add(quadradoH1);
+        quadrados.add(quadradoH2);
+        quadrados.add(quadradoH3);
+        quadrados.add(quadradoH4);
+        quadrados.add(quadradoH5);
+        quadrados.add(quadradoH6);
+        quadrados.add(quadradoH7);
+        quadrados.add(quadradoH8);
+        quadrados.add(quadradoH9);
+        quadrados.add(quadradoI1);
+        quadrados.add(quadradoI2);
+        quadrados.add(quadradoI3);
+        quadrados.add(quadradoI4);
+        quadrados.add(quadradoI5);
+        quadrados.add(quadradoI6);
+        quadrados.add(quadradoI7);
+        quadrados.add(quadradoI8);
+        quadrados.add(quadradoI9);
+        
+    }
+Tabuleiro tabuleiro = new Tabuleiro();
+int[][] tabuleiroJogador;
+private ArrayList<javax.swing.JTextField> quadrados;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Dificil;
+    private javax.swing.JButton Facil;
+    private javax.swing.JButton Genio;
+    private javax.swing.JButton IniciarJogo;
+    private javax.swing.JButton Medio;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField numeroUsuario;
     private javax.swing.JTextField quadradoA1;
     private javax.swing.JTextField quadradoA2;
