@@ -2894,6 +2894,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void IniciarJogoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IniciarJogoMouseClicked
         // TODO add your handling code here:
+        //começar jogo
         tabuleiroJogador = tabuleiro.mostrarNumero();
         iniciarQuadrado(0,0,0);
         iniciarQuadrado(0,3,9);
