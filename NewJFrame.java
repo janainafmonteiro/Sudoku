@@ -2909,7 +2909,6 @@ public class NewJFrame extends javax.swing.JFrame {
         Dificil.setEnabled(false);
         Genio.setEnabled(false);
         IniciarJogo.setEnabled(false);
-        System.out.println(tabuleiro.getNivel());
     }//GEN-LAST:event_IniciarJogoMouseClicked
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -2935,8 +2934,10 @@ public class NewJFrame extends javax.swing.JFrame {
         for(int i = linQuadrado; i < linQuadrado + 3; i++){
             for(int j = colQuadrado; j < colQuadrado + 3; j++){
                 numero = this.tabuleiroJogador[i][j];
-                String numeroString = Integer.toString(numero);
-                this.quadrados.get(indice).setText(numeroString);
+                if(numero != 0){
+                    String numeroString = Integer.toString(numero);
+                    this.quadrados.get(indice).setText(numeroString);
+                }
                 indice++;
             }
         }
